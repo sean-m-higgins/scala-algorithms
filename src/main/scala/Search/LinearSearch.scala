@@ -11,7 +11,7 @@ object LinearSearch {
     * @return - index of the @elem or -1 if elem is not fount in the @arr
     */
   def linearSearch(arr: Vector[Int], elem: Int): Int = {
-    def iter(index: Int): Int = 
+    def iter(index: Int): Int = {
       if (index == arr.length) -1
       else if (arr(index) == elem) index
       else iter(index + 1)
